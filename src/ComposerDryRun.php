@@ -27,8 +27,7 @@ class ComposerDryRun extends AbstractExternalTask {
    */
   public function run(ContextInterface $context): TaskResultInterface {
     $files = $context->getFiles()
-      ->path(pathinfo('composer.json', PATHINFO_DIRNAME))
-      ->name(pathinfo('composer.json', PATHINFO_BASENAME));
+      ->names(['composer.json', 'composer.lock']);
 
     if (0 === count($files)) {
       return TaskResult::createSkipped($this, $context);
