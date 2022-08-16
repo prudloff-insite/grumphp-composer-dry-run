@@ -1,0 +1,21 @@
+{
+    "name": "insite/composer-dry-run",
+    "description": "GrumPHP task that calls 'composer update --lock --dry-run'",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "ComposerDryRun\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpro/grumphp": "^0.21.0"
+    },
+    "config": {
+        "platform": {
+            "php": "7.3.11"
+        },
+        "allow-plugins": {
+            "phpro/grumphp": true
+        }
+    }
+}

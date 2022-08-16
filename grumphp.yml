@@ -1,0 +1,6 @@
+---
+grumphp:
+  extensions:
+    - ComposerDryRun\Loader
+  tasks:
+    composer_dry_run: ~
