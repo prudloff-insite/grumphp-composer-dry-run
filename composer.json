@@ -7,9 +7,6 @@
             "ComposerDryRun\\": "src/"
         }
     },
-    "require-dev": {
-        "phpro/grumphp": "^0.21.0"
-    },
     "config": {
         "platform": {
             "php": "7.3.11"
@@ -17,5 +14,8 @@
         "allow-plugins": {
             "phpro/grumphp": true
         }
+    },
+    "require": {
+        "phpro/grumphp": "^1.5"
     }
 }
