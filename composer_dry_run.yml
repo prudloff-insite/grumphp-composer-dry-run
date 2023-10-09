@@ -1,0 +1,6 @@
+services:
+  composer_dry_run:
+    class: ComposerDryRun\ComposerDryRun
+    arguments: [ '@process_builder', '@formatter.raw_process' ]
+    tags:
+      - { name: grumphp.task, task: composer_dry_run }

@@ -9,13 +9,13 @@
     },
     "config": {
         "platform": {
-            "php": "7.3.11"
+            "php": "8.2.8"
         },
         "allow-plugins": {
             "phpro/grumphp": true
         }
     },
     "require": {
-        "phpro/grumphp": "^1.5"
+        "phpro/grumphp": "^2.1"
     }
 }

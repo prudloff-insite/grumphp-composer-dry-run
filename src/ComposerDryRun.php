@@ -5,6 +5,7 @@ namespace ComposerDryRun;
 use GrumPHP\Runner\TaskResult;
 use GrumPHP\Runner\TaskResultInterface;
 use GrumPHP\Task\AbstractExternalTask;
+use GrumPHP\Task\Config\ConfigOptionsResolver;
 use GrumPHP\Task\Context\ContextInterface;
 use GrumPHP\Task\Context\GitPreCommitContext;
 use GrumPHP\Task\Context\RunContext;
@@ -51,10 +52,10 @@ class ComposerDryRun extends AbstractExternalTask {
   }
 
   /**
-   * @return OptionsResolver
+   * @return \GrumPHP\Task\Config\ConfigOptionsResolver
    */
-  public static function getConfigurableOptions(): OptionsResolver {
-    return new OptionsResolver();
+  public static function getConfigurableOptions(): ConfigOptionsResolver {
+    return ConfigOptionsResolver::fromOptionsResolver(new OptionsResolver());
   }
 
   /**
